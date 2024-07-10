@@ -1,0 +1,64 @@
+<style>
+   .contenedor-slider {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Espacio entre componentes */
+    padding: 0px 10px; /* Relleno */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.slider-izquierdo, .slider-derecho {
+    width: 5%; /* Ancho de los botones */
+}
+
+.slider-izquierdo img, .slider-derecho img {
+    width: 100%;
+    cursor: pointer; /* Cambia el cursor a mano */
+}
+
+.slider-screen {
+    flex: 1; /* Toma el espacio restante */
+    display: flex; /* Flexbox para centrar la imagen */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.slider-screen img {
+    max-width: 100%; /* Ajusta la imagen al tamaño máximo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.slider-derecho img:hover, .slider-izquierdo img:hover {
+    filter: saturate(180%); /* Efecto de saturación al pasar el ratón */
+}
+
+    </style>
+    <h1>GALERIA</h1>
+    <p>hace 12 años empezamos esta aventura cafetera en el 
+        centro de Lima, impulsados por nuestro amor y pasión por el buen café (100% peruano), entendiendo que detrás de un café de especialidad hay
+         un proceso lento que desarrollará sus aromas, sabores y garantizará la calidad del producto.</p>
+    <div class="contenedor-slider">
+        <!-- Botón izquierdo -->
+        <div class="slider-izquierdo">
+            <img src="klipartz1.com.png" alt="">
+        </div>
+        
+        <!-- Contenedor de la imagen principal -->
+        <div class="slider-screen">
+            <img name="Imagen" src="cafe1.jpeg" alt="">
+        </div>
+        
+        <!-- Botón derecho -->
+        <div class="slider-derecho">
+            <img src="p.png" alt="">
+        </div>
+    </div>
+    <p>A quién madruga, un buen café le ayuda.</p>
+    <p>El día comienza después de una buena taza de café, ¡y lo sabes!. </p>
+    
+    <!--probar aqui los dos script efecto.js y efecto2.js-->
+    <script src="efecto2.js"></script>
+
+    

@@ -1,0 +1,37 @@
+.contenedor-slider
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /*max-width: 1200px;*/
+    padding: 0px 10px;
+    /*/border: 1px solid p;*/
+}
+.slider-izquierdo,.slider-derecho
+{
+    width: 5%;
+   
+ 
+}
+.slider-izquierdo img, .slider-derecho img
+{
+    width: 100%;
+    background-color: rgba(251, 255, 6, 0.952);
+   
+    cursor: pointer;
+    position: relative;
+    
+    
+}
+.slider-screen
+{
+    width: 90%;
+    
+}
+.slider-screen img
+{
+    width: 100%;
+}
+.slider-izquierdo:hover::before{
+    opacity: .6 ;
+}

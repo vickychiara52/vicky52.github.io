@@ -1,0 +1,136 @@
+body{
+    background: rgb(33, 30, 30);
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap; /* para patear hacia abajo*/
+}
+.modificador{
+    width: 100%;
+    margin: 0 auto;
+}
+.contenido{
+   width: 100%;
+   
+    color: aliceblue;
+    margin-bottom: 10px;
+   display: flex;
+
+    min-height: 140vh;
+ 
+}
+
+a.logo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/*.................menu .............*/
+.menu{
+    background: white;
+}/*
+.menu ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+.menu ul li a{
+    color:black;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}*/
+
+.noticias{
+    width: 100%;
+    background: rgb(173, 39, 39);
+    text-align: center;
+
+}
+.novedades{
+    width: 100%;
+    background: rgb(145, 96, 66);
+    text-align: center;
+}
+/*.....para el menu de novedades ...............*/
+.novedades ul{
+    padding: 5px;
+   /* float: center;
+    background: yellow;
+    margin: 5px;*/
+    
+}
+.novedades ul li{
+    display: block;
+    line-height: 40px;
+    margin: 0 auto;
+
+}
+.novedades ul li a{
+    color: burlywood;
+    font-size: 28px;
+    padding: 5px 5px;
+    border-radius: 3px;
+    text-decoration: none;
+
+}
+.novedades li.active,.novedades li:hover{
+    background: white;
+    color: rgb(red, green, blue);
+    transition: .5s;
+}
+
+@media screen and (min-width:1024px){ /*cuando la pantalla se va reduciendo y el ancho de la pantalla es menor a 1024 px*/
+    .modificador{
+        width: 100%;
+    }
+    .noticias{
+        width: 70%;
+        margin-right: 10px;}
+    .novedades{
+        width: 29%;
+         background: rgb(156, 62, 25);}
+}
+
+/*.......................menu con display block kita los puntitos...................*/
+nav{
+    background: #c4720f; /*fondo del menu*/
+    width: 100%;
+}/*
+nav ul{
+    margin-right: 20px;
+
+}*//*
+nav ul li {
+    display: inline-block;/*elimina los puntitos y alinea de forma horizontal
+    line-height: 60px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: burlywood;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;/*pone texto en mayusculaejercio1/practica1.html
+}*/
+li a.active, li a:hover{/*efecto cuando pasas mause ensima de la letra*/
+    /*background: rgb(233, 233, 255);*/
+    transition: .5s;
+}
+.pie{
+    background: coral;
+    padding: 1em 0;
+    text-align: center;
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.pie h2{
+    display: flex;
+    text-align: center;
+    color: #0b0b0b;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">">
+    <link rel="stylesheet" href="estilos.css">
+  
+    <link rel="stylesheet" href="responsive.css">
+    <title>Document</title>
+    <nav>
+        <img class="logo" src="imagenes/logo1.png" width="160" height="160" alt="">
+    </nav>
+    
+    <script>
+        $(document).ready(function(){
+        
+            $('#p1').click(function(){
+            $('#contenido').load("inicio.html");}); 
+            $('#p2').click(function(){
+            $('#contenido').load("nosotros.html");});
+            $('#p3').click(function(){
+            $('#contenido').load("galeria.html");});
+            $('#p4').click(function(){
+                
+            $('#contenido').load("purocafe.html");});
+            $('#p5').click(function(){
+            $('#contenido').load("infuciones.html");});
+            $('#p6').click(function(){
+            $('#contenido').load("infucionesgourment.html");});
+            $('#p7').click(function(){
+            $('#contenido').load("otros.html");});
+            $('#p8').click(function(){
+            $('#contenido').load("extras");});
+            });
+    </script>
+   
+</head>
+<body>
+   <nav class=" menu modificador">
+        <!-- icino de acordion al inicio estara oculto-->
+         <input type="checkbox" id="check">
+         <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+         </label>
+         <!-- -->
+    <ul>
+        <li><a href="#" id="p1">  Inicio</a></li>
+        <li><a href="#" id="p2">Nosotros</a></li>
+         <li><a href="#" id="p3">Galeria</a></li>  
+</ul>
+
+</nav>
+
+    <main class="contenido flex"> 
+        <section class="noticias" id="contenido">
+            <h2>noticias</h2>
+
+        </section>
+        <aside class="novedades" id="contenido">
+            
+            <h2>LOS CAFES</h2>
+            <ul>
+                <li><a href="#" id="p4">Puro Cafe</a></li>
+                <li><a href="#" id="p5">Infusiones</a></li>
+                 <li><a href="#" id="p6">Infusiones Gourmet</a></li>  
+                 <li><a href="#" id="p7">Otros</a></li>  
+               
+        </ul>
+        
+            </nav>
+            
+
+        </aside>
+
+    </main>
+    <footer class="pie modificador">
+        <h2>2024 cafetería vich. Todos los derechos reservados</h2>
+        <h2>Direccion: av.peru</h2>
+        <h2>Contactos: 957183584</h2>
+    </footer>
+   
+</body>
+</html>
